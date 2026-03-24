@@ -27,6 +27,7 @@ for i in range(meses): # loop para coletar os dados financeiros do usuário
     saidas = np.append(saidas, saida) # adicionar a saída ao array de saídas
     investimentos = np.append(investimentos, investimento) # adicionar o investimento ao array de investimentos
     reservas = np.append(reservas, reserva) # adicionar a reserva ao array de reservas
+    print(f"{i+1}º mês registrado com sucesso!") # informar ao usuário que o mês foi registrado com sucesso
 
 fechamento = entradas - saidas # calcular o fechamento financeiro subtraindo as saídas das entradas
 saldo = fechamento + investimentos + reservas # calcular o saldo financeiro somando o fechamento, os investimentos e as reservas
